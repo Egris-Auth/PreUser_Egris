@@ -57,7 +57,7 @@ export const InfoHelper = () => {
 
         {/* Center Button */}
         <div className="w-12 h-12 bg-neutral-900 rounded-full flex items-center justify-center">
-          <img src='/Egrisicon.png' alt='egris' className='w-6 h-6'/>
+          <img src='/EgrisIcon.png' alt='egris' className='w-6 h-6'/>
         </div>
 
         {/* Bottom Options */}
