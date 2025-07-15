@@ -1,0 +1,180 @@
+.home{
+  width: 100%;
+  height: 90vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h1{
+    font-size: 80px;
+    background: linear-gradient(50deg, #cfcfcf 1%, #ffffff, #dcdcdc);
+    background-clip: text;
+    color: transparent;
+  }
+  & p{
+    font-size: medium;
+  }
+}
+
+
+/* Glow red */
+.RedGlows{
+  position: absolute;
+  top: 422px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(280deg, #e21616, #020202e6);
+  z-index: -1;
+  filter: blur(100px);
+
+  /* Combine both animations */
+  animation: blinkEffect 5s;
+}
+@keyframes blinkEffect {
+  0% {
+    opacity: 0.1;
+    filter: blur(95px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(100px);
+  }
+}
+
+/* Glow red 2*/
+.RedGlows2{
+  position: absolute;
+  top: 422px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(280deg, #e22016, #020202e6);
+  z-index: -2;
+  filter: blur(10px);
+
+  /* Combine both animations #e22016 */
+  animation: blinkEffect2 5s, venomMove 6.8s infinite alternate ease-in-out;
+}
+@keyframes blinkEffect2 {
+  0% {
+    opacity: 0.1;
+    filter: blur(40px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(10px);
+  }
+}
+@keyframes venomMove {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  7% {
+    transform: translate(-60%, -55%) scale(1.07);
+    border-radius: 60% 40% 50% 50% / 40% 60% 30% 70%;
+  }
+  18% {
+    transform: translate(-45%, -65%) scale(0.92);
+    border-radius: 40% 60% 70% 30% / 60% 40% 20% 80%;
+  }
+  29% {
+    transform: translate(-55%, -40%) scale(1.1);
+    border-radius: 50% 50% 30% 70% / 45% 55% 65% 35%;
+  }
+  42% {
+    transform: translate(-48%, -58%) scale(0.98);
+    border-radius: 70% 30% 40% 60% / 50% 50% 30% 70%;
+  }
+  57% {
+    transform: translate(-61%, -47%) scale(1.05);
+    border-radius: 45% 55% 35% 65% / 55% 45% 75% 25%;
+  }
+  65% {
+    transform: translate(-44%, -52%) scale(1.02);
+    border-radius: 55% 45% 65% 35% / 50% 30% 70% 50%;
+  }
+  79% {
+    transform: translate(-58%, -43%) scale(0.96);
+    border-radius: 42% 58% 38% 62% / 48% 52% 72% 28%;
+  }
+  87% {
+    transform: translate(-53%, -61%) scale(1.08);
+    border-radius: 62% 38% 55% 45% / 70% 30% 40% 60%;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+@keyframes rayPulse {
+  0%, 100% {
+    opacity: 0.7;
+    filter: blur(1.2px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(5px);
+  }
+}
+
+.CardParent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & .CardChilds{
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+  }
+}
+
+
+@media (max-width:1000px) {
+  .CardChilds{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:600px) {
+  .home{
+    & h1{
+      font-size: 50px;
+    }
+    & p{
+      font-size: medium;
+    }
+  }
+  .HorizontalRay {
+    top: 382px;
+  }
+}
+
+
+
+/* Horizontal ray element 
+.HorizontalRay {
+  display: none;
+  position: absolute;
+  top: 422px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 58, 58, 0.3) 30%, 
+    rgba(255, 58, 58, 0) 50%, 
+    rgba(255, 58, 58, 0.3) 30%, 
+    transparent
+  );
+  z-index: -1;
+  filter: blur(1px);
+  animation: rayPulse 8s infinite;
+}*/

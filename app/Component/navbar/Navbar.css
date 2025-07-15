@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.logo:hover{
+    filter: drop-shadow(1px 0px 15px red);
+}
+
+.homeNavLink {
+    cursor: pointer;
+    color: rgb(239, 239, 239);
+    font-size: 16px;
+}

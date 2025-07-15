@@ -1,0 +1,79 @@
+/* From Uiverse.io by Spacious74 */ 
+.outer {
+    width: 550px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 1px;
+    position: relative;
+  }
+  .card {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    padding: 20px;
+    /*border: solid 1px #202222;*/
+    background-size: 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    flex-direction: column;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    & p{
+        margin-top: 10px;
+        font-size: 1rem;
+        background: linear-gradient(45deg, #ffffff 1%, #fff, #e6e6e6);
+        background-clip: text;
+        color: transparent;
+    }
+  }
+  .card .text {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #606060 1%, #fff, #000);
+    background-clip: text;
+    color: transparent;
+  }
+
+
+  /* Glow red */
+.RedGlows{
+  position: absolute;
+  top: 422px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  height: 270px;
+  background: linear-gradient(280deg, #e21616, #020202e6);
+  z-index: -1;
+  filter: blur(100px);
+
+  /* Combine both animations */
+  animation: blinkEffect 5s;
+}
+@keyframes blinkEffect {
+  0% {
+    opacity: 0.1;
+    filter: blur(95px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(100px);
+  }
+}
+
+
+
+@media (max-width:700px) {
+  .outer {
+      width: 100%;
+      height: max-content;
+    }
+    .RedGlows{
+      position: absolute;
+      top: 350px;
+    }
+}

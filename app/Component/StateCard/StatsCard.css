@@ -1,0 +1,81 @@
+/* Container styling */
+.stats-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    background-color: transparent;
+    padding: 24px 50px;
+    border-radius: 12px;
+  }
+  
+  /* Responsive for medium screens */
+  @media (min-width: 800px) {
+    .stats-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Card styling */
+  .stat-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: transparent;
+    border: solid 1px #343434;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .stat-title {
+    font-size: 14px;
+    color: #c7cad1;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  /* Value styling */
+  .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5aff8c;
+  }
+  
+  .stat-previous {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-left: 4px;
+  }
+  
+  /* Badge styling */
+  .stat-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Positive badge */
+  .stat-badge.positive {
+    background-color: #d1fae5;
+    color: #059669;
+  }
+  
+  /* Negative badge */
+  .stat-badge.negative {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  /* Icon styling */
+  .stat-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  

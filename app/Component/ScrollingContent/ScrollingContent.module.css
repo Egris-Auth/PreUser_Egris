@@ -1,0 +1,92 @@
+/* ScrollingContent.module.css */
+.scrollContainer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .scrollContent {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.1s ease;
+    will-change: transform, opacity;
+  }
+  
+  /* Scroll directions - only apply when class is added */
+  .scrollLeft {
+    animation-name: scrollLeft;
+    animation-fill-mode: forwards;
+  }
+  
+  .scrollRight {
+    animation-name: scrollRight;
+    animation-fill-mode: forwards;
+  }
+  
+  .scrollUp {
+    animation-name: scrollUp;
+    animation-fill-mode: forwards;
+  }
+  
+  .scrollDown {
+    animation-name: scrollDown;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Speed classes */
+  .slow {
+    animation-duration: 1.5s;
+  }
+  
+  .normal {
+    animation-duration: 1s;
+  }
+  
+  .fast {
+    animation-duration: 0.5s;
+  }
+  
+  /* Keyframes for different directions */
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scrollRight {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
