@@ -6,7 +6,7 @@ const PhoneM = ({BrandName}) => {
   return (
     <div className="relative flex flex-col items-center m-12 w-92 h-80 bg-transparent phone-container">
     <div className="w-full flex justify-center ">
-        <div className="relative flex flex-col items-center m-12 w-92 h-80 bg-[#0a0a0a] rounded-t-[2rem] shadow-[0px_0px_40px_#636e72aa] border border-8 border-black overflow-hidden">
+        <div className="relative flex flex-col items-center m-12 w-92 h-80 bg-neutral-900 rounded-t-[2rem] border border-8 border-black overflow-hidden">
             {/* Lock Icon */}
             <div className="absolute -top-5 flex items-center justify-center w-40 h-9 bg-black rounded-full">
                 <div className='w-2 h-2 mt-4 bg-gray-700 rounded-full'/>
@@ -14,7 +14,7 @@ const PhoneM = ({BrandName}) => {
             </div>
 
             {/* Notification Card */}
-            <div className="mt-10 flex items-center space-x-3 p-4 rounded-lg w-11/12">
+            <div className="mt-10 flex items-center space-x-3 p-4 w-11/12">
                 <div className="flex items-center justify-center w-10 h-9 bg-gray-900 rounded-full">
                     <CiChat1 size={20}/>
                 </div>

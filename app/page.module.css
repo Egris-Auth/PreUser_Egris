@@ -21,8 +21,8 @@
 /* Glow red */
 .RedGlows{
   position: absolute;
-  top: 422px;
-  left: 50%;
+  top: 10px;
+  left: -50%;
   transform: translate(-50%, -50%);
   width: 250px;
   height: 250px;
@@ -47,7 +47,7 @@
 /* Glow red 2*/
 .RedGlows2{
   position: absolute;
-  top: 422px;
+  top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 150px;

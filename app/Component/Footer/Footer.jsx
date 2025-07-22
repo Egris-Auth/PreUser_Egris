@@ -42,9 +42,9 @@ const Footer = () => {
 
   return (
     <div className="relative flex-1 bg-gradient-to-t from-red-500/30 via-red-500/10 to-transparent px-8 sm:px-10 max-lg:pt-6 max-lg:pb-12 lg:pb-2">
-      <div className='flex flex-col justify-center items-center text-center text-gray-300 px-6 mt-64 mb-46'>
+      <div className='flex flex-col justify-center items-center text-center text-gray-300 px-6 mt-64 mb-26'>
         {/* Main footer content */}
-        <h2 className="text-4xl font-bold mb-2">Join the waitlist</h2>
+        <h2 className="text-4xl font-bold mb-6">Join the waitlist</h2>
         <p className="text-gray-400 mb-8 max-w-150">Next-generation authentication service provider delivering secure, scalable identity solutions for modern applications.</p>
         <div className="w-full">
           <form onSubmit={handleSubmit} className="flex flex-col gap-4 justify-center items-center max-w-md mx-auto">
@@ -59,11 +59,17 @@ const Footer = () => {
               <Loader/>
             )}
             {!loading && (
-              <button type='submit' className="w-full w-auto px-4 py-2 cursor-pointer bg-red-600 hover:shadow-[0px_0px_30px_rgba(255,58,58,0.5)] transition">
+              <button type='submit' className="w-full w-auto px-4 py-2 cursor-pointer bg-red-500 text-black hover:shadow-[0px_0px_10px_rgba(255,58,58,0.5)] transition">
                 JOIN WAITLIST
               </button>
             )}
           </form>
+        </div>
+
+        <div className="mt-12 space-y-3">
+          <p className="text-gray-400 max-w-150 text-sm">• Be the first to use a modern authentication platform.</p>
+          <p className="text-gray-400 max-w-150 text-sm">• Register now and get 20% off on your first project.</p>
+          <p className="text-gray-400 max-w-150 text-sm">• Invite your developer friends—earn an extra 10% off.</p>
         </div>
 
         {/* Bottom bar with copyright and social icons */}

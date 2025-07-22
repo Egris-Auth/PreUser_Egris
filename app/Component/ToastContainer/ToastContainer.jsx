@@ -35,10 +35,10 @@ const ToastItem = ({ message, type, removeToast }) => {
         visible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
       } ${
         type === "success"
-          ? "bg-black ring-1 ring-borderColor"
+          ? "bg-black border border-neutral-700"
           : type === "error"
-          ? "bg-black ring-1 ring-borderColor"
-          : "bg-black ring-1 ring-borderColor showdow-sm"
+          ? "bg-black border border-neutral-700"
+          : "bg-black border border-neutral-700 showdow-sm"
       }`}
     >
         <span className="text-xl">{icons[type] || <CiWavePulse1/>}</span>

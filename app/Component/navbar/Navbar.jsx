@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import Link from 'next/link';
+import InviteButton from '../InviteButton/InviteButton';
 
 function Navbar() {
     return (
@@ -9,6 +10,7 @@ function Navbar() {
                 <img className='logoImg w-8' src='./EgrisIcon.png' alt='img'/>
                 <p className='homeNavLink'>Egris Auth</p>
             </Link>
+            <InviteButton/>
         </nav>
     );
 }
