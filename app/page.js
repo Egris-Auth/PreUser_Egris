@@ -35,7 +35,7 @@ export default function HomePage() {
                     <div className='flex justify-center items-center gap-2 mt-4 mb-2'> 
                         <img src='https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000' alt='nextjs' className='w-10 h-10 border border-neutral-800 rounded-full'/>
                         +
-                        <img src='./egrisIcon.png' alt='nextjs' className='w-10 h-10 border border-neutral-800 p-1 rounded-full'/>
+                        <img src='./EgrisIcon.png' alt='nextjs' className='w-10 h-10 border border-neutral-800 p-1 rounded-full'/>
                     </div>
                     <h1 className='text-5xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent'>Auth Made Simple</h1>
                     <p className='max-w-130 text-center text-neutral-500'>Create powerful AI agent workflows with just a few lines of code, enabling complex task automation and decision-making processes.</p>
